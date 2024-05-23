@@ -25,24 +25,6 @@ namespace Gruppe7.Controllers
             return View(await _context.WeatherForecast.ToListAsync());
         }
 
-        // GET: WeatherForecast/Details/5
-        public async Task<IActionResult> Details(Guid? id)
-        {
-            if (id == null)
-            {
-                return NotFound();
-            }
-
-            var weatherForecast = await _context.WeatherForecast
-                .FirstOrDefaultAsync(m => m.Id == id);
-            if (weatherForecast == null)
-            {
-                return NotFound();
-            }
-
-            return View(weatherForecast);
-        }
-
         // GET: WeatherForecast/Create
         public IActionResult Create()
         {
