@@ -35,7 +35,7 @@
                 @Html.DisplayFor(modelItem => item.Comment)
             </td>
             <td>
-                <a asp-action="Edit" asp-route-id="@item.Id">Rediger</a> |
+                <a class="btn btn-primary" asp-action="Edit" asp-route-id="@item.Id">Oppdater</a> |
                 <a asp-action="Details" asp-route-id="@item.Id">Details</a> |
                 <a class="btn btn-danger" asp-action="Delete" asp-route-id="@item.Id">Slett</a>
             </td>
